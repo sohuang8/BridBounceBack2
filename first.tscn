@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bsc264russhdb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opk6u"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control" unique_id=1290070260]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1458621571]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_opk6u")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=106292782]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 68.0
+offset_right = 1025.0
+offset_bottom = 576.0
+theme_override_font_sizes/normal_font_size = 24
+text = "Your bird mother throws you out of your nest, in hopes you can learn to fly,
+
+But you cannot. You fall, down, down, down into a monochrome, confusing paper world.
+
+Now, you must get back up to your nest. As you have one leg and nonfunctional wings, you must bounce.
+
+Good luck.
+"
+horizontal_alignment = 1
+vertical_alignment = 1

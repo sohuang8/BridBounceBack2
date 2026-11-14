@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bu86hfnttgkrg"]
+
+[sub_resource type="GDScript" id="GDScript_opk6u"]
+script/source = "extends Area2D
+
+
+
+func _on_body_entered(body):
+	if body.name == \"Player\":
+		body.respawn()
+"
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_opk6u"]
+
+[node name="Killzone" type="Area2D" unique_id=2031158900]
+script = SubResource("GDScript_opk6u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1913132703]
+shape = SubResource("WorldBoundaryShape2D_opk6u")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
